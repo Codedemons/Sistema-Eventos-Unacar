@@ -64,7 +64,7 @@
                     <div class="input-group input-group-outline mb-3">                                            
                       <select class="form-control" name="RolUser">
                      
-                      <option value="R01" >Administrador</option>
+                      <option value="R01" >Juez</option>
                       <option value="R02" >Capitan de equipo</option>
                     </select>
                     </div>                    
