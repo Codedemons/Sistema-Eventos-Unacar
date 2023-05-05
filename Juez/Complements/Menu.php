@@ -26,7 +26,7 @@
           </a>
         </li>
         <li class="nav-item">
-          <a class="nav-link text-white active bg-gradient-primary" href="../Juez/Calificacion.php">
+          <a class="nav-link text-white" href="../Juez/Calificacion.php">
             <div class="text-white text-center me-2 d-flex align-items-center justify-content-center">
               <i class="material-icons opacity-10">stars</i>
             </div>
