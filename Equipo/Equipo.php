@@ -332,7 +332,7 @@
     </div>
   </main>
   <?php
-    require "Complements/Menu.php";
+    require "Complements/Config.php";
   ?>
   <!--   Core JS Files   -->
   <script src="../assets/js/tabla.js"></script>

@@ -203,7 +203,7 @@
     </div>
   </main>
   <?php
-    require "Complements/Config";
+    require "Complements/Config.php";
   ?>
   <!--   Core JS Files   -->
   <script src="../assets/js/tabla.js"></script>
