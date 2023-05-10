@@ -208,8 +208,8 @@
                       <h6 class="mb-0">RÚBRICAS</h6>
                     </div>
                     <div class="col-6 text-end">                        
-                      <a href="../Juez/Calificacion.php" class="btn bg-gradient-dark mb-0 text-sm ">&nbsp;&nbsp; Refrescar</a>                      
-                      <input type="submit" class="btn bg-gradient-dark mb-0 text-sm " name="update" value="&nbsp;&nbsp; Agregar " >                      
+                      <a href="../Juez/Calificacion.php" class="btn bg-gradient-dark mb-0 text-sm  material-icons opacity-10">autorenew</a>                      
+                      <input type="submit" class="btn bg-gradient-dark mb-0 text-sm material-icons opacity-10" name="update" value="save" >                      
                     </div>
                   </div>
                 </div>

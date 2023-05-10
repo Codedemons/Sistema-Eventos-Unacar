@@ -187,7 +187,7 @@
                       <h6 class="mb-0">RÚBRICAS</h6>
                     </div>
                     <div class="col-6 text-end">                        
-                      <a href="../Juez/Evento.php" class="btn bg-gradient-dark mb-0 text-sm ">&nbsp;&nbsp; Refrescar</a>
+                      <a href="../Juez/Evento.php" class="btn bg-gradient-dark mb-0 text-sm material-icons opacity-10 ">autorenew</a>
                     </div>
                   </div>
                 </div>
