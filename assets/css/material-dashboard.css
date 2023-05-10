@@ -3841,19 +3841,19 @@ fieldset:disabled .btn {
 }
 
 .btn-outline-primary {
-  --bs-btn-color: #e91e63;
-  --bs-btn-border-color: #e91e63;
+  --bs-btn-color: #07b76d;
+  --bs-btn-border-color: #07b76d;
   --bs-btn-hover-color: #000;
-  --bs-btn-hover-bg: #e91e63;
-  --bs-btn-hover-border-color: #e91e63;
+  --bs-btn-hover-bg: #07b76d;
+  --bs-btn-hover-border-color: #07b76d;
   --bs-btn-focus-shadow-rgb: 233, 30, 99;
   --bs-btn-active-color: #000;
-  --bs-btn-active-bg: #e91e63;
-  --bs-btn-active-border-color: #e91e63;
+  --bs-btn-active-bg: #07b76d;
+  --bs-btn-active-border-color: #07b76d;
   --bs-btn-active-shadow: none;
-  --bs-btn-disabled-color: #e91e63;
+  --bs-btn-disabled-color: #07b76d;
   --bs-btn-disabled-bg: transparent;
-  --bs-btn-disabled-border-color: #e91e63;
+  --bs-btn-disabled-border-color: #07b76d;
   --bs-gradient: none;
 }
 
