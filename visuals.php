@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta  http-equiv="refresh" content="5">
+  <meta  http-equiv="refresh" content="">
   <link rel="apple-touch-icon" sizes="76x76" href="assets/img/apple-icon.ico">
   <link rel="icon" type="image/png" href="assets/img/favicon.ico">
   <title>
@@ -24,10 +24,11 @@
 </head>
 
 <body class="bg-gray-200">
-  <div class="container position-sticky z-index-sticky top-0">
+  <div class="container z-index-sticky top-0">
     <div class="row">
       <div class="col-12">
         <!-- Navbar -->
+        <!-- <nav class="navbar navbar-expand-lg blur border-radius-xl top-0 z-index-3 shadow position-absolute my-3 py-2 start-0 end-0 mx-4"> -->        
         <nav class="navbar navbar-expand-lg blur border-radius-xl top-0 z-index-3 shadow position-absolute my-3 py-2 start-0 end-0 mx-4">
           <div class="container-fluid ps-2 pe-0">
             <a class="navbar-brand font-weight-bolder ms-lg-0 ms-3 " href="https://www.unacar.mx/">
