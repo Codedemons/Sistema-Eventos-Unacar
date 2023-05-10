@@ -27,11 +27,12 @@
       <div class="page-header min-vh-100">
         <div class="container">
           <div class="row">
-            <div class="col-6 d-lg-flex d-none h-100 my-auto pe-0 position-absolute top-0 start-0 text-center justify-content-center flex-column">
-              <div class="position-relative bg-gradient-primary h-100 m-3 px-7 border-radius-lg d-flex flex-column justify-content-center" style="background-image: url('assets/img/illustrations/illustration-signup.jpg'); background-size: cover;">
+            <div class="col-7 d-lg-flex d-none h-100 my-auto pe-0 position-absolute top-0 start-0 text-center justify-content-center flex-column">
+              <div class="position-relative bg-gradient-primary h-100 m-3 px-7 border-radius-lg d-flex flex-column justify-content-center" style="background-image: url('assets/img/edificios.jpeg'); background-size: cover;">
+              <span class="mask bg-gradient-dark opacity-4 border-radius-lg"></span>
               </div>
             </div>
-            <div class="col-xl-4 col-lg-5 col-md-7 d-flex flex-column ms-auto me-auto ms-lg-auto me-lg-5">
+            <div class="col-xl-4 col-lg-5 col-md-7 d-flex flex-column ms-auto me-auto ms-lg-auto me-lg-0">
               <div class="card card-plain">
                 <div class="card-header">
                   <h4 class="font-weight-bolder">Registro</h4>
@@ -39,39 +40,39 @@
                 </div>
                 <div class="card-body">
                  <form method="post" name="form" action="config/crudRegistro.php">
-                    <div class="input-group input-group-outline mb-3">
+                    <div class="input-group input-group-outline mb-2">
                       <label class="form-label">Matricula</label>
                       <input type="number" class="form-control" name="CodigoUser" required>
                     </div>
-                    <div class="input-group input-group-outline mb-3">
+                    <div class="input-group input-group-outline mb-2">
                       <label class="form-label">Nombre</label>
                       <input type="text" class="form-control" name="NombreUser" required>
                       
                     </div>
-                    <div class="input-group input-group-outline mb-3">
+                    <div class="input-group input-group-outline mb-2">
                       <label class="form-label">Apellido</label>
                       <input type="text" class="form-control" name="ApellidoUser" required>
                     </div>
-                    <div class="input-group input-group-outline mb-3">
+                    <div class="input-group input-group-outline mb-2">
                       <label class="form-label">Contreseña</label>
                       <input type="password" class="form-control" name="ClaveUser" required>
                     </div>
-                    <div class="input-group input-group-outline mb-3">
+                    <div class="input-group input-group-outline mb-2">
                       <label class="form-label">Facultad</label>
                       <input type="text" class="form-control" name="FacultadUser" required>
                     </div>
-                    <div class="input-group input-group-outline mb-3">                                            
+                    <div class="input-group input-group-outline mb-2">                                            
                       <select class="form-control" name="RolUser">
                      
                       <option value="R01" >Juez</option>
                       <option value="R02" >Capitan de equipo</option>
                     </select>
                     </div>                    
-                    <div class="input-group input-group-outline mb-3">
+                    <div class="input-group input-group-outline mb-2">
                       <label class="form-label">Telefono</label>
                       <input type="tel" class="form-control" name="TelefonoUser" required>
                     </div>
-                    <div class="input-group input-group-outline mb-3">
+                    <div class="input-group input-group-outline mb-2">
                       <label class="form-label">Correo</label>
                       <input type="email" class="form-control" name="CorreoUser" required>
                     </div>

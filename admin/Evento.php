@@ -244,10 +244,10 @@
                       </td>
 
                       <td class="align-middle text-center">
-                        <a class="btn btn-link text-dark px-3 mb-0" href="Evento.php?idEvento=<?php echo $rowGeneral['idEvento']?>"><i class="material-icons text-sm me-2">edit</i>Editar</a>
+                        <a class="btn btn-link text-dark px-3 mb-0" href="Evento.php?idEvento=<?php echo $rowGeneral['idEvento']?>"><i class="material-icons me-2">edit</i></a>
                       </td>
                       <td class="align-middle text-center">
-                      <a class="btn btn-link text-danger text-gradient px-3 mb-0" name=""  href="../config/CrudEvento.php?idEvento=<?php echo $rowGeneral['idEvento']?>"><i class="material-icons text-sm me-2">delete</i>Eliminar</a>
+                      <a class="btn btn-link text-danger text-gradient px-3 mb-0" name=""  href="../config/CrudEvento.php?idEvento=<?php echo $rowGeneral['idEvento']?>"><i class="material-icons me-2">delete</i></a>
                       </td>
                     </tr>
                   <?php
@@ -369,7 +369,10 @@
 
                       
                       <td class="align-middle text-center">
-                      <a class="btn btn-link text-danger text-gradient px-3 mb-0" name=""  id="deleteEP" href="../config/crudEventoParametro.php?idEventoParametro=<?php echo $rowAsignacion['idEventoParametro']; ?>"><i class="material-icons text-sm me-2">delete</i>Eliminar</a>
+                      <a class="btn btn-link text-danger text-gradient px-3 mb-0" name=""  id="deleteEP" href="../config/crudEventoParametro.php?idEventoParametro=<?php echo $rowAsignacion['idEventoParametro']; ?>">
+                      <i class="material-icons text-sm me-2">delete</i>
+                      Eliminar
+                      </a>
                       </td>
                     </tr>
                   <?php

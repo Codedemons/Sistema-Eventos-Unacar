@@ -4,7 +4,7 @@
 
 	$sql="SELECT id,nombre,apellido,email,telefono 
 						from t_persona";
-				$result=mysqli_query($conexion,$sql);
+	$result=mysqli_query($conexion,$sql);
 
  ?>
 <br><br>

@@ -21040,9 +21040,8 @@ fieldset:disabled .btn {
 }
 
 .card .card-header {
-  padding: 1.5rem;
+  padding: 0.5rem;/*1.5rem;*/
 }
-
 .card .card-body {
   font-family: "Roboto", Helvetica, Arial, sans-serif;
   padding: 1rem;
@@ -23496,7 +23495,6 @@ hr.horizontal.gray-light {
 .navbar-vertical.navbar-expand-xs .navbar-collapse {
   display: block;
   overflow: auto;
-  height: calc(100vh - 360px);
 }
 
 .navbar-vertical.navbar-expand-xs>[class*="container"] {
@@ -25752,7 +25750,7 @@ html * {
 
 body {
   font-weight: 400;
-  line-height: 2.6;
+  line-height: 1.8;
 }
 
 h1,
