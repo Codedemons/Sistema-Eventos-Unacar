@@ -116,7 +116,7 @@
                       <h6 class="mb-0">REGISTRO DE EQUIPO</h6>
                     </div>
                     <div class="col-6 text-end">                                             
-                      <input type="submit" class="btn bg-gradient-dark mb-0 text-sm  material-icons opacity-10" name="send" value="app_registration">                      
+                      <input type="submit" class="btn bg-gradient-dark mb-0   material-icons opacity-10" name="send" value="edit_note">                      
                     </div>
                   </div>
                 </div>
