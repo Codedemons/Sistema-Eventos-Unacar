@@ -21,7 +21,7 @@
   <link id="pagestyle" href="assets/css/material-dashboard.css?v=3.0.4" rel="stylesheet" />
 </head>
 
-<body class="">  
+<body class="g-sidenav-show  bg-gray-200">
   <main class="main-content  mt-0">
     <section>
       <div class="page-header min-vh-100">
@@ -34,7 +34,7 @@
             </div>
             <div class="col-xl-4 col-lg-5 col-md-7 d-flex flex-column ms-auto me-auto ms-lg-auto me-lg-0">
               <div class="card card-plain">
-                <div class="card-header">
+                <div>
                   <h4 class="font-weight-bolder">Registro</h4>
                   <p class="mb-0">Rellena los siguientes datos</p>
                 </div>
