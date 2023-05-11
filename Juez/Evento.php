@@ -163,7 +163,7 @@
                       </td>
 
                       <td class="align-middle text-center">
-                        <a class="btn btn-link text-dark px-3 mb-0" href="Evento.php?idEvento=<?php echo $rowGeneral['idEvento']?>"><i class="material-icons text-sm me-2">edit</i>Ver rúbricas</a>
+                        <a class="btn btn-link text-dark px-3 mb-0" href="Evento.php?idEvento=<?php echo $rowGeneral['idEvento']?>"><i class="material-icons me-2">visibility</i></a>
                       </td>
                     </tr>
                   <?php

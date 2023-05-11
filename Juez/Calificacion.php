@@ -179,7 +179,7 @@
                       </td>
 
                       <td class="align-middle text-center">
-                        <a class="btn btn-link text-dark px-3 mb-0" href="Calificacion.php?idEvento=<?php echo $rowGeneral['idEvento']?>"><i class="material-icons text-sm me-2">edit</i>Calificar</a>
+                        <a class="btn btn-link text-dark px-3 mb-0" href="Calificacion.php?idEvento=<?php echo $rowGeneral['idEvento']?>"><i class="material-icons me-2">stars</i></a>
                       </td>
                     </tr>
                   <?php
