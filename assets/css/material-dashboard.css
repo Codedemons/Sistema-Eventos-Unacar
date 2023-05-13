@@ -99,6 +99,12 @@ body {
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 
+input:-webkit-autofill,
+input:-webkit-autofill:focus {
+  transition: background-color 600000s 0s, color 600000s 0s;
+}
+
+
 hr {
   margin: 1rem 0;
   color: inherit;
@@ -3287,7 +3293,7 @@ textarea.form-control-lg {
 .input-group>.form-control,
 .input-group>.form-select,
 .input-group>.form-floating {
-  position: relative;
+  position: static;
   flex: 1 1 auto;
   width: 1%;
   min-width: 0;
