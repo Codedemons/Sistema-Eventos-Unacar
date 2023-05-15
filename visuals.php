@@ -82,7 +82,7 @@
                   document.write(new Date().getFullYear())
                 </script>,
                 Hecho en
-                <a href="https://www.unacar.mx/" class="font-weight-bold" target="_blank">Eventos Unacar</a>
+                <a href="https://www.unacar.mx/" class="font-weight-bold text-success" target="_blank">Eventos Unacar</a>
                 Para la web.
               </div>
             </div>            
