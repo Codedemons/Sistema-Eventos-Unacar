@@ -5,10 +5,11 @@
   session_start();// Iniciando Sesion
   // Guardando la sesion
   $user_check=$_SESSION['login_user_sys'];
-  
+
   $link = Conecta_DB_project();
   // SQL Query para completar la informacion del usuario
   $consulta = "select emailUsuario from usuario where emailUsuario='$user_check'";
+
   $sql=mysqli_query($link,$consulta);
   
   $row = mysqli_fetch_assoc($sql);
@@ -16,7 +17,8 @@
 
 
   $queryAsignacion = "SELECT idEventoParametro, nombreParametro, caracteristicaParametro,nombreEvento FROM `parametro` join eventoparametro ON parametro.idParametro = eventoparametro.idParametro JOIN evento ON evento.idEvento = eventoparametro.idEvento;";
-    $resultAsignacion = mysqli_query(Conecta_DB_project(), $queryAsignacion);
+  
+  $resultAsignacion = mysqli_query(Conecta_DB_project(), $queryAsignacion);
   
   
   if(!isset($login_session)){
@@ -75,8 +77,6 @@
   <script src="../assets/js/jquery-3.2.1.min.js"></script>  	
 	<script src="../assets/js/alertifyjs/alertify.js"></script>
   <script src="../assets/js/select2/js/select2.js"></script>
-
-
 
 </head>
 
