@@ -8,7 +8,7 @@
  // Contraseña del usuario
  $contrasena = "";
  // Nombre de la base de datos
- $baseDeDatos ="eventofci";
+ $baseDeDatos ="eventosfci";
 
  function Conecta_DB_project()
  {
