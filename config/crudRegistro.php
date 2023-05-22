@@ -12,7 +12,7 @@
 
 
     
-           include 'database.php';
+           include 'db.php';
             $link = Conecta_DB_project();
             $query = "INSERT INTO usuario (matriculaUsuario, idRol, nombreUsuario, apellidoUsuario, facultadUsuario,emailUsuario,Pass,telefonoUsuario) VALUES ('$Codigo','$Rol','$Nombre','$Apellido','$Facultad','$Correo','$Clave','$Telefono')";
             $result = mysqli_query($link, $query);
