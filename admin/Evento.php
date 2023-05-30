@@ -1,7 +1,6 @@
 <?php
   include("../config/database.php");
   
-  
   session_start();// Iniciando Sesion
   // Guardando la sesion
   $user_check=$_SESSION['login_user_sys'];
@@ -15,12 +14,10 @@
   $row = mysqli_fetch_assoc($sql);
   $login_session =$row['emailUsuario'];
 
-
-  $queryAsignacion = "SELECT idEventoParametro, nombreParametro, caracteristicaParametro,nombreEvento FROM `parametro` join eventoparametro ON parametro.idParametro = eventoparametro.idParametro JOIN evento ON evento.idEvento = eventoparametro.idEvento;";
+  $queryAsignacion = "SELECT * FROM parametros_evento";
   
   $resultAsignacion = mysqli_query(Conecta_DB_project(), $queryAsignacion);
-  
-  
+    
   if(!isset($login_session)){
       mysqli_close($link); // Cerrando la conexion
       header('Location: ../index.php'); // Redirecciona a la pagina de inicio
@@ -34,7 +31,7 @@
     if(isset($_GET['idEvento'])){ 
       $codigo = $_GET['idEvento'];
       
-      $querys = "SELECT * FROM evento WHERE idEvento = '$codigo'";
+      $querys = "call SP_OBTENER_EVENTO('$codigo');";
       $results = mysqli_query(Conecta_DB_project(), $querys);
 
       if(mysqli_num_rows($results) == 1){

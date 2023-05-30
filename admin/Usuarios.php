@@ -20,27 +20,27 @@
   }
   error_reporting(0);
 
-  $queryGeneral = "SELECT * FROM usuario NATURAL JOIN rol WHERE nombreRol = 'ADMIN'";
+  $queryGeneral = "CALL SP_OBTENER_ROL('ADMIN')";
   $resultGeneral = mysqli_query(Conecta_DB_project(), $queryGeneral);
 
   $queryRol = "SELECT * FROM rol";
   $resultRol = mysqli_query(Conecta_DB_project(), $queryRol);
 
-  $queryJuez = "SELECT * FROM usuario NATURAL JOIN rol WHERE nombreRol = 'JUEZ'";
+  $queryJuez = "CALL SP_OBTENER_ROL('JUEZ')";
   $resultJuez = mysqli_query(Conecta_DB_project(), $queryJuez);
 
-  $queryEquipo = "SELECT * FROM usuario NATURAL JOIN rol WHERE nombreRol = 'JEFE DE EQUIPO'";
+  $queryEquipo = "CALL SP_OBTENER_ROL('JEFE DE EQUIPO')";
   $resultEquipo = mysqli_query(Conecta_DB_project(), $queryEquipo);
 
   if(isset($_GET['matriculaUsuario'])){ 
     $matricula = $_GET['matriculaUsuario'];
     
-    $querys = "SELECT * FROM usuario NATURAL JOIN rol WHERE matriculaUsuario = '$matricula'";
+    $querys = "CALL SP_OBTENER_DATOS_USUARIO_MATRICULA('$matricula');";
     $results = mysqli_query(Conecta_DB_project(), $querys);
 
     if(mysqli_num_rows($results) == 1){
         $row = mysqli_fetch_array($results);
-
+        
         $matricula = $row['matricula'];
         $rol = $row['nombreRol'];
         $nombre = $row['nombreUsuario'];

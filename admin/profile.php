@@ -12,7 +12,6 @@ $sql=mysqli_query($link,$consulta);
 $row = mysqli_fetch_assoc($sql);
 $login_session =$row['emailUsuario'];
 
-
 if(!isset($login_session)){
     mysqli_close($link); // Cerrando la conexion
     header('Location: ../index.php'); // Redirecciona a la pagina de inicio
@@ -32,11 +31,7 @@ if(mysqli_num_rows($resultGeneral) == 1){
   $Telefono =  $row['telefonoUsuario'];
   $Rol = $row['nombreRol'];
 
-
 }
-
-
-
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -137,8 +132,7 @@ if(mysqli_num_rows($resultGeneral) == 1){
             <div class="col-12 col-xl-12">
               <div class="card card-plain h-100">
                 
-                <div class="card-body p-3">                  
-                  <hr class="horizontal gray-light my-4">
+                <div class="card-body p-3">                                    
                   <ul class="list-group">
                   <li class="list-group-item border-0 ps-0 text-sm"><strong class="text-dark">Codigo:</strong> &nbsp; <?php echo $Clave ?></li>
                     <li class="list-group-item border-0 ps-0 pt-0 text-sm"><strong class="text-dark">Nombre:</strong> &nbsp; <?php echo $Nombre ." " . $Apellido ?></li>
@@ -178,5 +172,4 @@ if(mysqli_num_rows($resultGeneral) == 1){
   <!-- Control Center for Material Dashboard: parallax effects, scripts for the example pages etc -->
   <script src="../assets/js/material-dashboard.min.js?v=3.0.4"></script>
 </body>
-
 </html>

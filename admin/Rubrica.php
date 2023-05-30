@@ -29,7 +29,7 @@
   if(isset($_GET['idParametro'])){ 
     $codigo = $_GET['idParametro'];
     
-    $querys = "SELECT * FROM parametro WHERE idParametro = '$codigo'";
+    $querys = "call SP_OBTENER_PARAMETRO('$codigo');";
     $results = mysqli_query(Conecta_DB_project(), $querys);
 
     if(mysqli_num_rows($results) == 1){
