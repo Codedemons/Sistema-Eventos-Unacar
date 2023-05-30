@@ -18,7 +18,7 @@ if(!isset($login_session)){
     header('Location: ../index.php'); // Redirecciona a la pagina de inicio
 }
 
-$queryGeneral = "SELECT * from usuario inner join rol on usuario.idRol = rol.idRol  where emailUsuario  like '$login_session'";
+$queryGeneral = "CALL SP_OBTENER_DATOS_USUARIO('$login_session');";
 $resultGeneral = mysqli_query($link, $queryGeneral);
 
 if(mysqli_num_rows($resultGeneral) == 1){
@@ -137,8 +137,7 @@ if(mysqli_num_rows($resultGeneral) == 1){
             <div class="col-12 col-xl-12">
               <div class="card card-plain h-100">
                 
-                <div class="card-body p-3">                  
-                  <hr class="horizontal gray-light my-4">
+                <div class="card-body p-3">                                    
                   <ul class="list-group">
                   <li class="list-group-item border-0 ps-0 text-sm"><strong class="text-dark">Codigo:</strong> &nbsp; <?php echo $Clave ?></li>
                     <li class="list-group-item border-0 ps-0 pt-0 text-sm"><strong class="text-dark">Nombre:</strong> &nbsp; <?php echo $Nombre ." " . $Apellido ?></li>

@@ -18,7 +18,7 @@ if(!isset($login_session)){
     header('Location: ../index.php'); // Redirecciona a la pagina de inicio
 }
 
-$queryGeneral = "SELECT * from usuario inner join rol on usuario.idRol = rol.idRol  where emailUsuario  like '$login_session'";
+$queryGeneral = "CALL SP_OBTENER_DATOS_USUARIO('$login_session');";
 $resultGeneral = mysqli_query($link, $queryGeneral);
 
 if(mysqli_num_rows($resultGeneral) == 1){
