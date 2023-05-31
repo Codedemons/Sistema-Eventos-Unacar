@@ -20,8 +20,9 @@
 
   error_reporting(0);
 
-  $queryGeneral = "SELECT * FROM evento INNER JOIN equipo ON evento.idEvento = equipo.idEvento 
+  $queryGeneral = "SELECT * FROM evento INNER JOIN equipo ON evento.idEvento = equipo.idEvento
     WHERE statusEvento = 'ACTIVO' GROUP BY equipo.idEquipo";
+    
   $resultGeneral = mysqli_query(Conecta_DB_project(), $queryGeneral);
 
 

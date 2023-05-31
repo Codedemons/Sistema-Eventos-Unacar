@@ -21,7 +21,7 @@
 
   error_reporting(0);
 
-  $queryGeneral = "SELECT * FROM evento WHERE statusEvento = 'ACTIVO'";
+  $queryGeneral = "call SP_OBTENER_EVENTOS_ACTIVOS('ACTIVO')";
   $resultGeneral = mysqli_query(Conecta_DB_project(), $queryGeneral);
 
   if(isset($_GET['idEvento'])){ 
