@@ -181,7 +181,7 @@
             </div>
             <div class="card-body px-0 pb-2">
               <div class="table-responsive p-0">
-                <table id="tabla" class="table align-items-center mb-0">
+                <table class="s align-items-center mb-0">
                   <thead>
                     <tr>
                       <th class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">Codigo</th>
@@ -250,7 +250,7 @@
     require "Complements/Config.php";
   ?>
   <!--   Core JS Files   -->
-  <script src="../assets/js/tabla.js"></script>
+  
   <script src="../assets/js/estado.js"></script>
   <script src="../assets/js/core/popper.min.js"></script>
   <script src="../assets/js/core/bootstrap.min.js"></script>
