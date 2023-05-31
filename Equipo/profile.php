@@ -32,10 +32,7 @@ if(mysqli_num_rows($resultGeneral) == 1){
   $Telefono =  $row['telefonoUsuario'];
   $Rol = $row['nombreRol'];
 
-
 }
-
-
 
 ?>
 <!DOCTYPE html>

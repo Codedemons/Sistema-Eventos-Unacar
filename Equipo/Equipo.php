@@ -20,31 +20,24 @@
   }
   error_reporting(0);
 
-
-
  $idJefeCreador =$rowy['matriculaUsuario'];
 
 
   $verIntegrantes = !empty($_GET['idEquipo']) ? $_GET['idEquipo'] : '';
 
- $queryMisEquipos = "SELECT idEquipo, nombreEquipo, nombreEvento,descripcionEvento FROM equipo JOIN evento ON evento.idEvento = equipo.idEvento WHERE idJefeCreador ='$idJefeCreador';";
+ $queryMisEquipos = "call SP_OBTENER_REPRESENTANTE('$idJefeCreador');";
+
  $resultMisEquipos = mysqli_query(Conecta_DB_project(), $queryMisEquipos);
 
- $queryIntegrantesEquipo= "SELECT * FROM `usuario` JOIN equipo_usuario ON equipo_usuario.matriculaUsuario = usuario.matriculaUsuario WHERE idEquipo = '$verIntegrantes'"; 
+ $queryIntegrantesEquipo= "CALL SP_OBTENER_USUARIOS('$verIntegrantes');"; 
  $resultIntegrantesEquipo = mysqli_query(Conecta_DB_project(), $queryIntegrantesEquipo);
 
-
  
-
  if(!isset($_GET['editarDatos'])){ 
       $codigo = $_GET['matriculaUsuario'];
       
-
-
-      $queryDatos = "SELECT * FROM usuario WHERE matriculaUsuario = '$codigo'";
+      $queryDatos = "CALL SP_OBTENER_DATOS_USUARIO_MATRICULA('$codigo');";
       $resultDAtos = mysqli_query(Conecta_DB_project(), $queryDatos);
-
-
 
       if(mysqli_num_rows($resultDAtos) == 1){
           $rowDatos = mysqli_fetch_array($resultDAtos);
@@ -57,10 +50,6 @@
           $telefono = $rowDatos['telefonoUsuario'];
       }
     }
-
-
-
-
 ?>
 
 <!DOCTYPE html>

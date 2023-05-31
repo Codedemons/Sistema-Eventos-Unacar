@@ -19,7 +19,7 @@
       header('Location: ../index.php'); // Redirecciona a la pagina de inicio
   }
 
-  $queryGeneral = "SELECT idEvento, usuario.facultadUsuario, nombreEvento, descripcionEvento,nombreUsuario,statusEvento FROM evento INNER JOIN usuario ON evento.matriculaUsuario = usuario.matriculaUsuario ORDER BY statusEvento";
+  $queryGeneral = "SELECT * from Eventos_Ordenados;";
   $resultGeneral = mysqli_query(Conecta_DB_project(), $queryGeneral);
 
   $queryNumero = "SELECT COUNT(idEvento) AS numero FROM evento";

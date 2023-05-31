@@ -13,11 +13,9 @@
   $row = mysqli_fetch_assoc($sql);
   $login_session =$row['emailUsuario'];
 
-
   $idJefeCreador =$row['matriculaUsuario'];
-  
-  
-  $queryAsignacion = "SELECT idJefeCreador,idEquipo,nombreEquipo, nombreEvento, descripcionEvento, statusEvento FROM evento JOIN equipo ON equipo.idEvento = evento.idEvento WHERE idJefeCreador= '$idJefeCreador'";
+    
+  $queryAsignacion = "CALL SP_OBTENER_JEFE('$idJefeCreador');";
   $resultAsignacion = mysqli_query(Conecta_DB_project(), $queryAsignacion);
 
 
