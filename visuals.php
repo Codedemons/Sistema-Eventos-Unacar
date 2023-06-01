@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en"></html>
 <head>
+  <meta  http-equiv="refresh" content="5">
   <?php 
     require "./config/header.php";
   ?>
